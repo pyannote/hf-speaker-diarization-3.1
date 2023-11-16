@@ -26,7 +26,7 @@ Make the most of it thanks to our [consulting services](https://herve.niderb.fr/
 
 This pipeline is the same as [`pyannote/speaker-diarization-3.0`](https://hf.co/pyannote/speaker-diarization-3.1) except it removes the [problematic](https://github.com/pyannote/pyannote-audio/issues/1537) use of `onnxruntime`.  
 Both speaker segmentation and embedding now run in pure PyTorch. This should ease deployment and possibly speed up inference.  
-It requires pyannote.audio version 3.1 or higher (currently in development).
+It requires pyannote.audio version 3.1 or higher.
 
 It ingests mono audio sampled at 16kHz and outputs speaker diarization as an [`Annotation`](http://pyannote.github.io/pyannote-core/structure.html#annotation) instance:
 
